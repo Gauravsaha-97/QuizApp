@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?><!--Root view-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quiz"
+    android:theme="@style/AppTheme">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+        <!--Title of the app-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:text="Quiz Time"
+            android:textAllCaps="true"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+        <!--First Question starts-->
+        <TextView
+            style="@style/questionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Who is the Captain of Indian Cricket Team?" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/virat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Virat Kohli"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/dhawan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sikhar Dhawan"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rohit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rohit Sharma"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/dhoni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MS Dhoni"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+        </RadioGroup>
+        <!--First Question ends-->
+
+        <!--Second Question begins-->
+        <TextView
+            style="@style/questionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Who are the opening batsman of Australian Cricket Team? (Check all that apply)" />
+
+        <CheckBox
+            android:id="@+id/haddin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="Brad Haddin"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/watson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="Shane Watson"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/hayden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="Matthew Hayden"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/lynn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="Chris Lynn"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold" />
+        <!--Second question ends-->
+
+        <!--Third Question begins-->
+        <TextView
+            style="@style/questionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Who is the Captain of England Cricket Team?" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/joe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Joe Root"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/eoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eoin Morgan"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/jos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jos Buttler"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/moen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moen Ali"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+        </RadioGroup>
+        <!--Third Question ends-->
+
+        <!--Fourth question begins-->
+        <TextView
+            style="@style/questionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In 1983, under whom India won the WorldCup ?" />
+
+        <EditText
+            android:id="@+id/enterAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:hint="Enter your answer here"
+            android:inputType="textCapCharacters" />
+        <!--Fourth question ends-->
+
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="#ffb366"
+            android:onClick="submitAnswer"
+            android:text="Get your Score"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+</ScrollView>
